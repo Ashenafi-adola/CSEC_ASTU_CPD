@@ -1,10 +1,8 @@
 ls = []
-
 for i in range(5):
     b = []
     b = list(map(int, input().split()))
     ls.append(b)
-
 mv = 0
 k = []
 for i in ls:
@@ -22,5 +20,4 @@ for i in k:
             mv += 2
         elif ind == 1 or ind == 3:
             mv += 1
-
 print(mv)
