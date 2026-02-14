@@ -1,12 +1,9 @@
 a, b = map(int, input().split())
-
 poss = [1, 2, 3, 4, 5, 6]
 nw = []
-
 for i in poss:
     if i >= a and i >= b:
         nw.append(i)
-
 if len(nw) == 3:
     print('1/2')
 elif len(nw) == 2:
