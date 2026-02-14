@@ -1,6 +1,5 @@
 n = int(input())
 ns = list(map(int, input().split()))
-
 m = 0
 ns.reverse()
 if n > 1:
@@ -9,8 +8,6 @@ if n > 1:
             break
         if ns[0] > 0:
             ns.remove(ns[0])
-
-
     for i in range(len(ns)):
         if m + ns[i] <= 0:
             m += ns[i]
