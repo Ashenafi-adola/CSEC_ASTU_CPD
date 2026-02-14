@@ -1,5 +1,4 @@
 a, b = map(int, input().split())
-
 n = 0
 k = True
 while k:
@@ -9,5 +8,4 @@ while k:
 
     elif (n*a - b)%10 == 0:
         k=False
-
 print(n)
