@@ -1,9 +1,6 @@
 n, h = map(int, input().split())
-
 hs = list(map(int, input().split()))
-
 wd = 0
-
 for i in hs:
     if i <= h:
         wd += 1
@@ -11,6 +8,4 @@ for i in hs:
         wd += int(i/h)
     else:
         wd += int(i/h) + 1
-
-
 print(wd)
