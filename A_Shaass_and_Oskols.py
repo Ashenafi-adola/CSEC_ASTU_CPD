@@ -22,6 +22,5 @@ else:
         if i[0] == 1:
             print(0)
             break
-
     if len(main) == 0:
         print(ns[0])

@@ -1,5 +1,4 @@
 n = int(input())
-
 con = 0
 for i in range(n):
     car = input()
