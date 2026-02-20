@@ -1,13 +1,9 @@
 n = int(input())
-
 ns = list(map(int, input().split()))
-
 m = int(input())
 main = []
-
 for i in range(m):
     main.append(list(map(int, input().split())))
-
 if len(ns) > 1:
     for j in main:
         if j[0] == 1:
