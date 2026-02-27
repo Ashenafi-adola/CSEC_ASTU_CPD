@@ -3,14 +3,15 @@ for _ in range(t):
     n, k = map(int, input().split())
     d = list(map(int, input().split()))
     d.sort()
-    tr = 0
-    nw = 0
-    cur = d[0]
-    for i in d:
-        if tr > nw:
-            nw = tr
-        if i - cur <= k:
-            tr += 1
+    a = 0
+    b = 0
+    for i in range(1, n):
+        if d[i] - d[i-1] <= k:
+            a += 1
         else:
-            tr = 1
-    print(n - nw-1)
+            if a >= b:
+                b = a
+            a = 0
+    if a >= b:
+        b = a
+    print(n - (b+1))
