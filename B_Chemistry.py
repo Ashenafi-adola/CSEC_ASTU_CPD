@@ -20,4 +20,4 @@ for i in range(t):
             k -= 1
     if r.count(1) > 1 and sum(r) > 1:
         print("NO")
-    el
+    
