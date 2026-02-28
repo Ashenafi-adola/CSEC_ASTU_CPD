@@ -8,7 +8,7 @@ for i in range(t):
         if j == 0:
             sp += 1
         else:
-            if sp >= pr:
+            if sp > pr:
                 pr = sp
             sp = 0
     if sp > pr:
