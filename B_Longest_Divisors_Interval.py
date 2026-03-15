@@ -1,15 +1,10 @@
 t = int(input())
 for i in range(t):
-    n = input()
-    na = int(n)
-    k = len(n) - 1
-    le = 0
-    while True:
-        k -= 1
-        m = int(n[0:k])
-        print(m)
-        if na%m == 0:
-            le = len(n[:k])
+    n = int(input())
+    pr = 0
+    for j in range(1,n+1):
+        if n%j == 0:
+            pr += 1
+        else:
             break
-        
-    print(le)
+    print(pr)
