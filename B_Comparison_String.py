@@ -1,20 +1,14 @@
 t = int(input())
-for i in range(t):
+for _ in range(t):
     n = int(input())
+    l = 1
     s = input()
-    gt = 0
-    lt = 0
-    g = 0
-    l = 0
-    for j in s:
-        if j == '>':
-            g += 1
-            if g > gt:
-                gt = g
-            l = 0
-        else:
+    mx = 1
+    for i in range(1, n):
+        if s[i] == s[i-1]:
             l += 1
-            if l > lt:
-                lt = l
-            g = 0
-    print(max(gt, lt)+1)
+            if l > mx:
+                mx = l
+        else:
+            l = 1
+    print(mx+1)
